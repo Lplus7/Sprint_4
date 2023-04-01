@@ -11,7 +11,6 @@ import org.junit.AfterClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-//import static org.junit.Assert.assertTrue;
 import java.util.List;
 import static org.hamcrest.CoreMatchers.containsString;
 import org.openqa.selenium.remote.Augmenter;
@@ -87,13 +86,8 @@ public class FaqTest {
     public void myFaqTest() {
 
         WebElement faqElement = faqElements.get(index);
-
-        boolean buttonClickable = objMainPage.isButtonClickable(faqElement);
-
-        if (!buttonClickable) return;
-
+        
         faqElement.click();
-        //objMainPage.clickGetCookie();
 
         String faqQuestion = objMainPage.getQuestion(faqElement);
         objMainPage.waitForLoadFaq();
