@@ -21,6 +21,7 @@ public class MainPage {
     private final By imageScooter = By.xpath(".//img[@alt = 'Scooter blueprint']");
     private final By buttonAcceptCookie = By.id("rcc-confirm-button");
 
+
     // конструктор класса
     public MainPage(WebDriver driver){
         this.driver = driver;
